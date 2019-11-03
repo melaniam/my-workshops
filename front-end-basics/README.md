@@ -48,4 +48,8 @@ This workshop is addressed to people that already know basic programming concept
 9. Perfect, now the state and the rendering parts are separate. But the update and delete parts are still not connected. Let's first implement the array manipulation functions, and think about how to use them in the next step.
    * Create a "updateTodo" function that finds a todo (by text) in the array and updates its "done" status.
    * Create a "deleteTodo" function that finds a todo (by text) in the array and deletes it.
-10. 
+0. Now, let's use them!
+   * Group all todo-state-related functions in an object (think of this as an "interface" to your state).
+   * Even if in this implementation we have access from todo.js to each method in state.js, take into account the possibility of having them implemented in an external library (or *module*). Consider that you have access to them in script.js (because it's the entry file for your application), and pass them as parameters in todo.js.
+   * Remember to call each function after the rendering part for its associated functionality is done.
+1. 

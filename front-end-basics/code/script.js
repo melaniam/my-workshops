@@ -15,8 +15,9 @@ const initApp = () => {
         const todoText = addFormElement.querySelector("input").value;
 
         // render element
-        renderTodo(todoText);
-        addTodo({ text: todoText, done: false }); // when adding it, the todo is not yet done
+        // when creating the todo item, it is not yet done
+        const todoObject = { text: todoText, done: false }; 
+        renderTodo(todoObject, todoStateFunctions);
 
         toggleTodoForm(addFormElement, addTodoButton, false);
     });

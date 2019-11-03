@@ -30,3 +30,5 @@ const deleteTodo = todoToDelete => {
 
     console.log("deleteTodo", todoToDelete, todos); // just for testing
 };
+
+const todoStateFunctions = { addTodo, updateTodo, deleteTodo };
