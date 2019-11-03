@@ -1,3 +1,10 @@
+const todos = []; // array of objects with keys: text, done
+
+const addTodo = newTodo => {
+    todos.push(newTodo);
+    console.log("addTodo", newTodo, todos); // just for testing
+};
+
 const initApp = () => {
     const addTodoButton = document.getElementById("add");
 
@@ -16,6 +23,7 @@ const initApp = () => {
 
         // render element
         renderTodo(todoText);
+        addTodo({ text: todoText, done: false }); // when adding it, the todo is not yet done
 
         toggleTodoForm(addFormElement, addTodoButton, false);
     });

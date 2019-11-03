@@ -34,6 +34,10 @@ This workshop is addressed to people that already know basic programming concept
 6. None of the checkbox and the delete button work. Let's change this!
    * When clicking on the checkbox, besides the checkbox functionality, toggle a strikethrough line on the text
    * When clicking on the delete button, remove the todo from the list
-7. 
+7. The todo app seems to be working fine now! That's great, but what if we want to save the todos somewhere? We don't have an API for now, but we could store them in the browser. To start with that, it's important to think about an appropriate structure.
+   * Since there are several todos, an array is a good structure for keeping them.
+   * For each todo, we need to store not only the text, but also its status (done / not done).
+   * Let's make sure we add each todo in the array when we create it.
+8. 
 
 
