@@ -16,5 +16,10 @@ This workshop is addressed to people that already know basic programming concept
 
 1. Create an HTML file and its basic structure.
 2. Create a JS file and link it in the HTML.
-3. 
+3. Start thinking about the elements that you need on the page. Add these elements in HTML.
+   * a heading - "My TODO list"
+   * a container for the list of todos
+   * an add (+) button
+   * a form that handles the addition of one todo: clicking the + button triggers the display of a text input and a "save" button. Take into account user experience (hide the + button when the form is displayed).
+4. 
 
