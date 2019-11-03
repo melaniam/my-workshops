@@ -26,5 +26,11 @@ This workshop is addressed to people that already know basic programming concept
    * Upon clicking "Save"
       * that text is displayed inside the todo list container
       * the form is hidden
-5. 
+5. Great, the todo is displayed on the page! Now that we see it, it becomes clear that each todo will have more functionality, like marking it as done, and deleting it. This makes each todo more complex, so extract this functionality in its own file.
+   * Create a todo.js file and link it in the HTML
+   * Create a *renderTodo* function that
+       * creates the HTML element corresponding to that todo
+       * displays it inside the todo list container
+6. 
+
 

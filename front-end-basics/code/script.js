@@ -1,5 +1,4 @@
 const initApp = () => {
-    const todoListElement = document.getElementById("todo-list");
     const addTodoButton = document.getElementById("add");
 
     const addFormElement = document.getElementById("add-todo-form");
@@ -16,9 +15,7 @@ const initApp = () => {
         const todoText = addFormElement.querySelector("input").value;
 
         // render element
-        const todoElement = document.createElement("li");
-        todoElement.innerText = todoText;
-        todoListElement.appendChild(todoElement);
+        renderTodo(todoText);
 
         toggleTodoForm(addFormElement, addTodoButton, false);
     });
@@ -27,8 +24,12 @@ const initApp = () => {
 initApp();
 
 function toggleTodoForm(addFormElement, addTodoButton, showForm) {
-    addFormElement.querySelector("input").value = "";
+    const input = addFormElement.querySelector("input");
+    input.value = "";
     addFormElement.style.display = showForm ? "block" : "none";
     addTodoButton.style.display = showForm ? "none" : "block";
+    if (showForm) {
+        input.focus();
+    }
 }
   

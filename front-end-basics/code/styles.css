@@ -1,3 +1,9 @@
 #add-todo-form {
     display: none;
 }
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
