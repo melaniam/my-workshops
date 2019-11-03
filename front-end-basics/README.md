@@ -31,6 +31,9 @@ This workshop is addressed to people that already know basic programming concept
    * Create a *renderTodo* function that
        * creates the HTML element corresponding to that todo
        * displays it inside the todo list container
-6. 
+6. None of the checkbox and the delete button work. Let's change this!
+   * When clicking on the checkbox, besides the checkbox functionality, toggle a strikethrough line on the text
+   * When clicking on the delete button, remove the todo from the list
+7. 
 
 

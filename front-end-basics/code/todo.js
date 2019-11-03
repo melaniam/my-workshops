@@ -7,7 +7,17 @@ const createTodo = function(todoText) {
         <span>${todoText}</span>
         <button>Delete</button>
     `;
-
+  
+    const checkbox = element.querySelector("input");
+    checkbox.addEventListener("change", event => {
+        event.target.parentNode.querySelector("span").classList.toggle("done");
+    });
+  
+    const deleteButton = element.querySelector("button");
+    deleteButton.addEventListener("click", () => {
+        element.remove();
+    });
+  
     return element;
 };
 
