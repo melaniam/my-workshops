@@ -20,6 +20,11 @@ This workshop is addressed to people that already know basic programming concept
    * a heading - "My TODO list"
    * a container for the list of todos
    * an add (+) button
-   * a form that handles the addition of one todo: clicking the + button triggers the display of a text input and a "save" button. Take into account user experience (hide the + button when the form is displayed).
-4. 
+   * a form that handles the addition of one todo: clicking the + button triggers the display of a text input and a "Save" button. Take into account user experience (hide the + button when the form is displayed).
+4. Now that the form is in place, start implementing the functionality of adding a todo. Keep it as simple as possible, for now:
+   * The user enters some data in the text input
+   * Upon clicking "Save"
+      * that text is displayed inside the todo list container
+      * the form is hidden
+5. 
 
