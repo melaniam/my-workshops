@@ -38,6 +38,12 @@ This workshop is addressed to people that already know basic programming concept
    * Since there are several todos, an array is a good structure for keeping them.
    * For each todo, we need to store not only the text, but also its status (done / not done).
    * Let's make sure we add each todo in the array when we create it.
-8. 
-
+8. This works well, but the array does not change when a todo is updated or deleted. To do that, we would need to update todo.js file. But in that way, we would mix the rendering part of the todo (what we currently do in todo.js) with the changes that we make to the array. For a better code maintainance, that's something that we should avoid. Let's see how we can do it, then.
+   * Before going further, there is an important concept that we need to "name" here: the **state**. 
+      * *In any given point in time, there is a different information stored in the memory of your web application that you can access via your variables, classes, data structures, etc. **All the stored information, at a given instant in time, is called the application state.*** (source: [quora question](https://www.quora.com/Whats-state-in-a-web-application))
+      * Further reading: [egghead article](https://egghead.io/articles/what-is-state-why-do-i-need-to-manage-it) and [w3c state definition](https://www.w3.org/2001/tag/doc/state.html#whatisstate)
+   * Based on the definition above, the array that stores all the todos is exactly our application state.
+   * Rewording the problem described above, regarding the maintainance of the app: we should **separate the rendering part from the application state**.
+   * Let's create a new file, called state.js, and move the array and the function that adds a todo in that file.
+9. 
 
