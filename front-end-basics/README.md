@@ -45,5 +45,7 @@ This workshop is addressed to people that already know basic programming concept
    * Based on the definition above, the array that stores all the todos is exactly our application state.
    * Rewording the problem described above, regarding the maintainance of the app: we should **separate the rendering part from the application state**.
    * Let's create a new file, called state.js, and move the array and the function that adds a todo in that file.
-9. 
-
+9. Perfect, now the state and the rendering parts are separate. But the update and delete parts are still not connected. Let's first implement the array manipulation functions, and think about how to use them in the next step.
+   * Create a "updateTodo" function that finds a todo (by text) in the array and updates its "done" status.
+   * Create a "deleteTodo" function that finds a todo (by text) in the array and deletes it.
+10. 
