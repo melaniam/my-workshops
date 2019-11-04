@@ -66,4 +66,16 @@ This workshop is addressed to people that already know basic programming concept
    * When initialing the app, read the todos saved in local storage.
    * Render each todo on the page.
    * Take into account the "done" status for each todo.
- 
+
+This it it! **Congrats, you've reached the end of this workshop**, and you now have a not-so-good-looking but functioning TODO app. **I hope you've enjoyed this journey!** 
+
+### Further implementation ideas
+If you'd like to continue, here are two things you can try:
+   * style the app and learn some CSS by doing it
+   * understand more about how state is used in modern web libraries & frameworks
+      * Currently, the state is "actually" kept in two places: todos array in state.js AND the DOM 
+      * Modern web libraries & frameworks (like React, Vue, Angular etc.) only keep the state in one place, and the DOM reacts to state changes. These makes it easier to write declarative code (maybe it's time to read again the egghead article above).
+      * The code could be updated to do that:
+         * the existing todos should be read from local storage in state.js
+         * renderTodo should not trigger createTodo (even logically, rendering something should not trigger "creating" it in the state), but it should be the other way around
+         * each state change should be followed by a call to renderTodos - the function does not exist yet, feel free to add it; this is not optimal when we do it, but this is very similar to how the modern libraries work (note that they optimize the DOM manipulation operations)
