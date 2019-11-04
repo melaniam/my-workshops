@@ -52,4 +52,14 @@ This workshop is addressed to people that already know basic programming concept
    * Group all todo-state-related functions in an object (think of this as an "interface" to your state).
    * Even if in this implementation we have access from todo.js to each method in state.js, take into account the possibility of having them implemented in an external library (or *module*). Consider that you have access to them in script.js (because it's the entry file for your application), and pass them as parameters in todo.js.
    * Remember to call each function after the rendering part for its associated functionality is done.
-1. 
+1. Our TODO app is almost fully functional now. What's missing? You guessed it: storing the data in the browser. Follow these steps to also have that:
+   * If you don't know anything about data storage in the browser, or if you need a refresh:
+      * [MDN's Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+      * [Local Storage on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+   * Create a new file, storage.js, to take care of reading and saving the data from and in local storage. Don't worry about using it in the TODO app now, that will be done in the following step.
+   * Be sure to test that the functions you created (getTodos and storeTodos) are working correctly.
+   * Keep in mind that: 
+      * the data is read using localStorage.getItem({your_key}), and the data returned from this is a string
+      * the data is saved using localStorage.setItem({your_key}, {your_data}), and {your_data} also needs to be a string
+2. 
+ 
