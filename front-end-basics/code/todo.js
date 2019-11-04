@@ -6,8 +6,8 @@ const createTodo = function(todoObject, todoStateFunctions) {
     
     const element = document.createElement("li");
     element.innerHTML = `
-        <input type="checkbox" />
-        <span>${text}</span>
+        <input type="checkbox" ${done ? 'checked="checked"' : ""} />
+        <span ${done ? 'class="done"' : ""} >${text}</span>
         <button>Delete</button>
     `;
   

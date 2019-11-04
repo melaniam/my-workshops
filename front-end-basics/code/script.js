@@ -1,4 +1,10 @@
 const initApp = () => {
+    const existingTodos = getTodos();
+    if (existingTodos && existingTodos.length > 0) {
+        console.log("todos in local storage", existingTodos);
+        existingTodos.forEach(todo => renderTodo(todo, todoStateFunctions));
+    }
+
     const addTodoButton = document.getElementById("add");
 
     const addFormElement = document.getElementById("add-todo-form");

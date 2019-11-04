@@ -62,5 +62,8 @@ This workshop is addressed to people that already know basic programming concept
       * the data is read using localStorage.getItem({your_key}), and the data returned from this is a string
       * the data is saved using localStorage.setItem({your_key}, {your_data}), and {your_data} also needs to be a string
 2. We've set the stage, now we need to use these functions. It's easier to start with storing the data: whenever we're updating the state, we should also save the changes in local storage.
-3. 
+3. Still, when refreshing the page, we need to start over with writing our todos. Let's use the ones that we already saved.
+   * When initialing the app, read the todos saved in local storage.
+   * Render each todo on the page.
+   * Take into account the "done" status for each todo.
  
