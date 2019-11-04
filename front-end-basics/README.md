@@ -61,5 +61,6 @@ This workshop is addressed to people that already know basic programming concept
    * Keep in mind that: 
       * the data is read using localStorage.getItem({your_key}), and the data returned from this is a string
       * the data is saved using localStorage.setItem({your_key}, {your_data}), and {your_data} also needs to be a string
-2. 
+2. We've set the stage, now we need to use these functions. It's easier to start with storing the data: whenever we're updating the state, we should also save the changes in local storage.
+3. 
  

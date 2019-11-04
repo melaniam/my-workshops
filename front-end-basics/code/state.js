@@ -2,6 +2,7 @@ const todos = []; // array of objects with keys: text, done
 
 const addTodo = newTodo => {
     todos.push(newTodo);
+    storeTodos(todos);
     console.log("addTodo", newTodo, todos); // just for testing
 };
 
@@ -10,6 +11,7 @@ const updateTodo = newTodo => {
     if (oldTodo) {
         if (oldTodo.done !== newTodo.done) {
             oldTodo.done = newTodo.done;
+            storeTodos(todos);
         } else {
             console.log("todo has not changed");
         }
@@ -26,6 +28,7 @@ const deleteTodo = todoToDelete => {
         console.log("todo not found");
     } else {
         todos.splice(index, 1);
+        storeTodos(todos);
     }
 
     console.log("deleteTodo", todoToDelete, todos); // just for testing
