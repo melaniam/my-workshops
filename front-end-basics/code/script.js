@@ -13,6 +13,8 @@ const initApp = () => {
     });
 
     const saveButton = addFormElement.querySelector("button");
+    saveButton.classList.add("save_btn");
+
     saveButton.addEventListener("click", (event) => {
         // do not submit the form -> do not refresh the page
         event.preventDefault();
